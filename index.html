@@ -3,49 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boas Práticas no Trânsito - Página Inicial</title>
+    <title>Boas Práticas no Trânsito</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/svg" href="logo.svg">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="background">
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="logo.svg" alt="logo"></a>
-            </div><!--Logo-->
+    <!--Header-->
+    <header class="header" id="header">
+        <!--Logo-->
+        <div class="logo">
+            <a href=""><img src="logo.svg" alt="Logo - Boas Práticas no Trânsito" title="Boas Práticas no Trânsito"><b title="Boas Práticas no Trânsito">BPNT</b></a>
+        </div>
+        
+        <!--Navbar-->
+        <nav class="navbar">
+            <a href="index.html">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="#blog">Blog</a>
+        </nav>
 
-            <ul class="links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <div class="icons">
-                <i class='bx bxs-traffic'></i>
-                <i class='bx bx-search'></i>
-            </div> <!--Ícones-->
-        </header>
-        <hr class="hr1">
+        <!--Icons & Search-->
+        <div class="icons">
+            <!--Search and First Icon-->
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit"><i class='bx bx-search' class="icon1"></i></button>
+            </form>
 
+            <!--Second Icon-->
+            <span class="icon2"><i class='bx bxs-traffic'></i></span>
+        </div>
+    </header>
+
+    <!--Title-->
+    <section class="section">
         <div class="title">
+            <!--Main-Title-->
             <div class="main-title">
-                <h1>"PREZE POR SUA SEGURANÇA,</h1>
-                <h1>CUIDE-SE NO TRÂNSITO!"</h1>
+                <h1>"NO TRÂNSITO,</h1>
+                <h1>O SENTIDO É A VIDA"</h1>
             </div>
-            <p>Muitas pessoas acabam não tomando alguns cuidados ao transitar em<br>estradas, ruas e cidades, e acabam cometendo infrações de trânsito.<br>A gente de uma equipe da Boas Práticas no trânsito, iremos fornecer dicas,<br>avisos e precauções sobre o trânsito brasileiro!</p>
-            <button>Saiba Mais</button>
 
-        </div> <!--Título-->
-    </div> <!--Background-->
+            <!--Paragraph-->
+            <p>Muitas pessoas acabam não tomando alguns cuidados ao transitar em<br>estradas, ruas e cidades, e acabam cometendo infrações de trânsito.<br>A gente de uma equipe da Boas Práticas no trânsito, iremos fornecer dicas,<br>avisos e precauções sobre o trânsito brasileiro!</p>
+
+            <!--Button-->
+            <button>Saiba Mais</button>
+        </div>
+    </section>
+
+    <!--First Content-->
+    
+    <hr class="hr1">
+    <div class="content1">
+        <h1>Preze por sua segurança</h1>
+
+        <p>No trânsito, é necessário tomar precavências para que haja uma viagem tranquila e com riscos de acidentes mais reduzidos! Saiba, que o trânsito é algo a ser levado a sério.<br><br>
+        Temos, por exemplo, as <u>Leis de trânsito</u>, que mesmo que as pessoas em certas vezes não a obedecem, são feitas para garantir a segurança do motorista, passageiros e outros motoristas ou pedestres.</p>
+    </div>
+
+    <!--Second Content-->
+
+    <hr class="hr1">
+    <div class="content2">
+        <h1>Obedeça às leis de trânsito</h1>
+
+        <p>No trânsito, é necessário tomar precavências para que haja uma viagem tranquila e com riscos de acidentes mais reduzidos! Saiba, que o trânsito é algo a ser levado a sério.<br><br>
+        Temos, por exemplo, as <u>Leis de trânsito</u>, que mesmo que as pessoas em certas vezes não a obedecem, são feitas para garantir a segurança do motorista, passageiros e outros motoristas ou pedestres.</p>
+    </div>
+
+    <!--Third Content-->
+
     <hr class="hr2">
-    <div class="sobre" id="sobre">
-        <h1>Sobre Nós</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic quasi aspernatur perspiciatis saepe in quis esse doloremque accusamus asperiores! Culpa quae mollitia doloribus modi, itaque eaque voluptates amet repellendus?</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic quasi aspernatur perspiciatis saepe in quis esse doloremque accusamus asperiores! Culpa quae mollitia doloribus modi, itaque eaque voluptates amet repellendus?</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic quasi aspernatur perspiciatis saepe in quis esse doloremque accusamus asperiores! Culpa quae mollitia doloribus modi, itaque eaque voluptates amet repellendus?</p>
+    <div class="content3">
+        <h1>Use o cinto de segurança</h1>
+
+        <p>Pode até parecer chato o alarme do carro para colocar o cinto de segurança, mas, em certos casos, o cinto de segurança pode salvar sua vida!<br><br>
+        Além disso, o não uso do cinto de segurança também é considerado uma infração de trânsito, por isso, o melhor a se fazer é obeceder a regra do uso do cinto, ok?</p>
+    </div>
+
+    <!--Fourth Content-->
+
+    <hr class="hr2">
+    <div class="content4">
+        <h1>Faça manutenções em seu automóvel</h1>
+
+        <p>Pode até parecer chato o alarme do carro para colocar o cinto de segurança, mas, em certos casos, o cinto de segurança pode salvar sua vida!<br><br>
+        Além disso, o não uso do cinto de segurança também é considerado uma infração de trânsito, por isso, o melhor a se fazer é obeceder a regra do uso do cinto, ok?</p>
+    </div>
+
+    <!--Fifth Content-->
+
+    <hr class="hr2">
+    <div class="content5">
+        <h1>Troque os pneus quando necessário</h1>
+
+        <p>Pode até parecer chato o alarme do carro para colocar o cinto de segurança, mas, em certos casos, o cinto de segurança pode salvar sua vida!<br><br>
+        Além disso, o não uso do cinto de segurança também é considerado uma infração de trânsito, por isso, o melhor a se fazer é obeceder a regra do uso do cinto, ok?</p>
+    </div>
+
+    <!--End of the page-->
+
+    <hr class="hr1">
+    <div class="end">
+        <!--End-Title-->
+        <h1>"Preze por sua vida,<br>cuide-se no trânsito!"</h1>
+
+        <!--End-Button-->
+        <button>Saiba Mais</button>
+
+        <!--End-Nav-->
+        <div class="end-nav">
+            <!--End-Logo-->
+            <a href="index.html"><img src="logo preto e branco.svg" alt="Logo - Boas Práticas no Trânsito"><br><b>BPNT</b></a>
+
+            <!--End-Navbar-->
+            <nav class="navbar-end">
+                <a href="index.html">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+                <a href="#blog">Blog</a>
+            </nav>
+        </div>
     </div>
 </body>
 </html>
