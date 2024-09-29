@@ -266,7 +266,7 @@ body {
     text-align: center;
 }
 
-.content1, .content2, .content3, .content4, .content5 p {
+.content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
     padding: 100px;
     text-align: justify;
 }
