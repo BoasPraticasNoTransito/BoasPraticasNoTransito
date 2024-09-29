@@ -262,6 +262,8 @@ body {
 .content1, .content2, .content3, .content4, .content5 {
     padding-top: 112.5px;
     padding-bottom: 112.5px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 22.5px;
     text-align: center;
 }
