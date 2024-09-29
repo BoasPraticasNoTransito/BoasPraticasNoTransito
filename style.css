@@ -260,14 +260,14 @@ body {
 /*Contents*/
 
 .content1, .content2, .content3, .content4, .content5 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    font-size: 30px;
+    padding-top: 112.5px;
+    padding-bottom: 112.5px;
+    font-size: 22.5px;
     text-align: center;
 }
 
 .content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
-    padding: 100px;
+    padding: 75px;
     text-align: justify;
 }
 
