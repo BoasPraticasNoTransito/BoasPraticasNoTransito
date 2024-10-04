@@ -13,7 +13,7 @@
 
 /*Scroll-Bar*/
 
-html::-webkit-scrollbar {
+/*html::-webkit-scrollbar {
     width: 0.7rem;
 }
 
@@ -24,12 +24,31 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 5rem;
+}*/
+
+div.scrollable {
+    overflow-y: scroll; /* Adiciona a barra de rolagem vertical */
+    scrollbar-width: thin; /* Para navegadores compatíveis com CSS */
+}
+
+div.scrollable::-webkit-scrollbar {
+    width: 0.7rem; /* Largura da barra de rolagem */
+}
+
+div.scrollable::-webkit-scrollbar-track {
+    background: transparent; /* Fundo da trilha da barra de rolagem */
+}
+
+div.scrollable::-webkit-scrollbar-thumb {
+    background-color: #fff; /* Cor do polegar da barra de rolagem */
+    border-radius: 5rem; /* Bordas arredondadas do polegar */
 }
 
 /*Body*/
 
 body {
     background: #ff9d00;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
 }
 
 /*Hr*/
@@ -252,9 +271,16 @@ body {
 
 .section {
     min-height: 200vh;
-    background: url(Svg/Inicio.svg) no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+}
+
+.section.loaded {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /*Contents*/
@@ -277,7 +303,7 @@ body {
 
 .content1 {
     color: #fff;
-    background: #005198;
+    background: #c86800;
 }
 
 /*Second Content*/
