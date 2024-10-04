@@ -15,6 +15,7 @@
 
 /*html::-webkit-scrollbar {
     width: 0.7rem;
+    display: none;
 }
 
 html::-webkit-scrollbar-track {
@@ -26,22 +27,8 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }*/
 
-div.scrollable {
-    overflow-y: scroll; /* Adiciona a barra de rolagem vertical */
-    scrollbar-width: thin; /* Para navegadores compatíveis com CSS */
-}
-
-div.scrollable::-webkit-scrollbar {
-    width: 0.7rem; /* Largura da barra de rolagem */
-}
-
-div.scrollable::-webkit-scrollbar-track {
-    background: transparent; /* Fundo da trilha da barra de rolagem */
-}
-
-div.scrollable::-webkit-scrollbar-thumb {
-    background-color: #fff; /* Cor do polegar da barra de rolagem */
-    border-radius: 5rem; /* Bordas arredondadas do polegar */
+html::-webkit-scrollbar {
+    display: none;
 }
 
 /*Body*/
@@ -49,6 +36,7 @@ div.scrollable::-webkit-scrollbar-thumb {
 body {
     background: #ff9d00;
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+    overflow-y: none;
 }
 
 /*Hr*/
