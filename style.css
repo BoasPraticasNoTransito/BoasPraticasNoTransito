@@ -36,7 +36,19 @@ html::-webkit-scrollbar {
 body {
     background: #ff9d00;
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
-    overflow-y: none;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móveis */
+    body {
+        font-size: 16px;
+    }
+}
+@media (min-width: 769px) {
+    /* Estilos para desktops */
+    body {
+        font-size: 16px;
+    }
 }
 
 /*Hr*/
@@ -83,7 +95,7 @@ body {
 }
 
 .logo a:hover b {
-    color: #000;
+    color: #ce3e3e;
 }
 
 .logo img {
@@ -109,7 +121,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #805540;
+    color: #ce3e3e;
 }
 
 .navbar a::after {
@@ -119,7 +131,7 @@ body {
     bottom: -0.3rem;
     width: 100%;
     height: 0.15rem;
-    background: #805540;
+    background: #ce3e3e;
     border-radius: 0.24rem;
     transform: translateY(10px);
     opacity: 0;
@@ -180,7 +192,7 @@ body {
 }
 
 .search-bar button:hover i {
-    color: #805540;
+    color: #ce3e3e;
 }
 
 /*Icon2*/
@@ -196,7 +208,7 @@ body {
 }
 
 .icon2:hover {
-    color: #805540;
+    color: #ce3e3e;
 }
 
 .icons {
@@ -224,7 +236,7 @@ body {
     color: #ffffff;
     line-height: 1.5rem;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 700;
     max-width: 100%;
     max-height: 100%;
 }
@@ -375,7 +387,7 @@ body {
 }
 
 .end a:hover b {
-    color: #CF4500;
+    color: #ff5700;
 }
 
 /*End-Nav*/
@@ -403,7 +415,7 @@ body {
 }
 
 .navbar-end a:hover {
-    color: #CF4500;
+    color: #ff5700;
 }
 
 .navbar-end a::after {
@@ -413,7 +425,7 @@ body {
     bottom: -0.3rem;
     width: 100%;
     height: 0.15rem;
-    background: #CF4500;
+    background: #ff5700;
     border-radius: 0.24rem;
     transform: translateY(7.5px);
     opacity: 0;

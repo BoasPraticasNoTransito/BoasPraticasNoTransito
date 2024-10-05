@@ -9,10 +9,15 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
-        'Jpg/clay-banks-KBqnxve73BE-unsplash22393600.jpg',
-        'Jpg/evans-dims-dyKl1WZDJ6M-unsplash24001600.jpg',
-        'Jpg/richard-haas-nGK4eApCxjM-unsplash24001800.jpg',
-        'Jpg/zoshua-colah-J3chXHpKer0-unsplash24001600.jpg'
+        'Jpg/Inicio/benjamin-punzalan-uMez7bFB2JQ-unsplash.jpg',
+        'Jpg/Inicio/clay-banks-KBqnxve73BE-unsplash.jpg',
+        'Jpg/Inicio/ed-259-xcrI6CPkkJs-unsplash.jpg',
+        'Jpg/Inicio/evans-dims-dyKl1WZDJ6M-unsplash.jpg',
+        'Jpg/Inicio/florian-wehde-8bjnP3yhNTg-unsplash.jpg',
+        'Jpg/Inicio/ilnur-kalimullin-CB0Qrf8ib4I-unsplash.jpg',
+        'Jpg/Inicio/jesse-bowser-c0I4ahyGIkA-unsplash.jpg',
+        'Jpg/Inicio/peggy-sue-zinn-pomI1itWE_0-unsplash.jpg',
+        'Jpg/Inicio/richard-haas-nGK4eApCxjM-unsplash.jpg'
     ];
 
     const randomImage = images[Math.floor(Math.random() * images.length)];
