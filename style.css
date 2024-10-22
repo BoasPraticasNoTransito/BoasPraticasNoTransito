@@ -1,8 +1,10 @@
-/*Fonts*/
+/* BPNT HOME PAGE CSS */
+
+/* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*All*/
+/* All */
 
 * {
     margin: 0;
@@ -11,32 +13,20 @@
     font-family: "poppins", sans-serif;
 }
 
-/*Scroll-Bar*/
-
-/*html::-webkit-scrollbar {
-    width: 0.7rem;
-    display: none;
-}
-
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 5rem;
-}*/
+/* Scrollbar */
 
 html::-webkit-scrollbar {
-    display: none;
+    display: none; /* Hide scrollbar */
 }
 
-/*Body*/
+/* Body */
 
 body {
     background: #ff9d00;
-    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+    overflow-x: hidden; /* Block and hide horizontal scrollbar */
 }
+
+/* Media */
 
 @media (max-width: 768px) {
     /* Estilos para dispositivos móveis */
@@ -44,6 +34,7 @@ body {
         font-size: 16px;
     }
 }
+
 @media (min-width: 769px) {
     /* Estilos para desktops */
     body {
@@ -51,7 +42,7 @@ body {
     }
 }
 
-/*Hr*/
+/* Hr */
 
 .hr1 {
     border: solid #fff 5px;
@@ -61,9 +52,9 @@ body {
     border: solid #000 5px;
 }
 
-/*Header*/
+/* Header */
 
-.header {
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -71,7 +62,7 @@ body {
     padding: 1.2rem 9.375%;
     background: transparent;
     backdrop-filter: blur(25px);
-    transition: background-color 0.3s ease;
+    transition: background-color .3s ease;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -81,22 +72,7 @@ body {
     z-index: 100;
 }
 
-/*Logo*/
-
-.logo a {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-}
-
-.logo a b {
-    font-size: 1.3rem;
-    transition: 0.3s;
-}
-
-.logo a:hover b {
-    color: #ce3e3e;
-}
+/* Logo */
 
 .logo img {
     width: 2.5rem;
@@ -104,7 +80,23 @@ body {
     max-height: 100%;
 }
 
-/*Navbar*/
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo a b {
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.logo a:hover b {
+    color: #ff0000;
+    text-shadow: 0.5px 0.5px 1px #000;
+}
+
+/* Navbar */
 
 .navbar {
     transform: translateY(15%);
@@ -112,16 +104,18 @@ body {
 
 .navbar a {
     position: relative;
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    margin-right: 1.5rem;
-    transition: 0.3s;
+    font-weight: 600;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    transition: .3s;
 }
 
 .navbar a:hover {
-    color: #ce3e3e;
+    color: #ff0000;
+    text-shadow: 0.5px 0.5px 1px #000;
 }
 
 .navbar a::after {
@@ -131,7 +125,8 @@ body {
     bottom: -0.3rem;
     width: 100%;
     height: 0.15rem;
-    background: #ce3e3e;
+    background: #ff0000;
+    box-shadow: 0.5px 0.5px 1px #000;
     border-radius: 0.24rem;
     transform: translateY(10px);
     opacity: 0;
@@ -143,9 +138,9 @@ body {
     opacity: 1;
 }
 
-/*Search and Icon1*/
+/* Search, Search Icon and Icon2 */
 
-.search-bar {
+#search-bar {
     width: 187.5px;
     height: 33.75px;
     background: transparent;
@@ -155,23 +150,30 @@ body {
     align-items: center;
     max-width: 100%;
     max-height: 100%;
+    transition: .3s;
 }
 
-.search-bar input {
+#search-bar:valid {
+    border: 1.8px solid #ff0000;
+    box-shadow: 0.5px 0.5px 1px #000;
+}
+
+#search-bar input {
     width: 100%;
     background: transparent;
     border: none;
     outline: none;
     font-size: 13px;
-    color: #fff;
     padding-left: 7.5px;
+    transition: .3s;
 }
 
-.search-bar input::placeholder {
+#search-bar input, #search-bar input::placeholder {
     color: #fff;
+    font-weight: 600;
 }
 
-.search-bar button {
+#search-bar button {
     width: 30px;
     height: 100%;
     background: transparent;
@@ -185,30 +187,30 @@ body {
     max-height: 100%;
 }
 
-.search-bar button i {
-    font-size: 17.5px;
+#search-bar button i {
     color: #fff;
-    transition: 0.3s;
+    font-size: 17.5px;
+    transition: .3s;
 }
 
-.search-bar button:hover i {
-    color: #ce3e3e;
+#search-bar button:hover i {
+    color: #ff0000;
+    text-shadow: 0.5px 0.5px 1px #000;
 }
 
-/*Icon2*/
-
-.icon2 {
+#icon2 {
     color: #fff;
     font-size: 1.9rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
     transform: translateY(-10%);
     max-width: 100%;
     max-height: 100%;
 }
 
-.icon2:hover {
-    color: #ce3e3e;
+#icon2:hover {
+    color: #ff0000;
+    text-shadow: 0.5px 0.5px 1px #000;
 }
 
 .icons {
@@ -216,12 +218,12 @@ body {
     gap: 0.75rem;
 }
 
-/*Title*/
+/* Title */
 
 .title {
     position: absolute;
     transform: translateY(45%);
-    margin-left: 3.75rem;
+    margin-left: 4rem;
 }
 
 .title h1 {
@@ -236,20 +238,20 @@ body {
     color: #ffffff;
     line-height: 1.5rem;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 650;
     max-width: 100%;
     max-height: 100%;
 }
 
-/*Button-Link*/
+/* Button-Link */
 
 .title button {
+    color: #fff;
     margin-top: 1.5rem;
     margin-bottom: 6rem;
-    background-color: #ff5700;
-    color: #fff;
+    background-color: #ff0000;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 7.5px 37.5px;
     cursor: pointer;
     border-radius: 1.5rem;
@@ -259,15 +261,15 @@ body {
 
 .title button:hover {
     letter-spacing: 1.5px;
-    background-color: #CF4500;
-    transition: 0.3s all;
+    background-color: #b30000;
+    transition: .3s all;
 }
 
 .title button:not(hover) {
-    transition: 0.3s all;
+    transition: .3s all;
 }
 
-/*Background*/
+/* Background */
 
 .section {
     min-height: 200vh;
@@ -275,7 +277,7 @@ body {
     background-position: center;
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+    transition: opacity .5s ease-in-out, transform 1s ease-in-out;
 }
 
 .section.loaded {
@@ -283,15 +285,31 @@ body {
     transform: scale(1);
 }
 
-/*Contents*/
+/* Contents */
 
 .content1, .content2, .content3, .content4, .content5 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 112.5px;
     padding-bottom: 112.5px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 22.5px;
-    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a{
+    color: #ffff00;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.content1 a:hover, .content2 a:hover, .content3 a:hover, .content4 a:hover, .content5 a:hover{
+    color: blue;
 }
 
 .content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
@@ -299,42 +317,42 @@ body {
     text-align: justify;
 }
 
-/*First Content*/
+/* First Content */
 
 .content1 {
     color: #fff;
     background: #c86800;
 }
 
-/*Second Content*/
+/* Second Content */
 
 .content2 {
     color: #fff;
     background: #0086FF;
 }
 
-/*Third Content*/
+/* Third Content */
 
 .content3 {
     color: #000;
     background: #4aaafe;
 }
 
-/*Fourth Content*/
+/* Fourth Content */
 
 .content4 {
     color: #000;
     background: #82c5ff;
 }
 
-/*Fifth Content*/
+/* Fifth Content */
 
 .content5 {
     color: #000;
-    background: #c6e4ff;
+    background: #9fc7ea;
 }
 
-/*End of the page*/
+/* End of the page */
 
 .end {
     padding-top: 187.5px;
@@ -345,7 +363,7 @@ body {
     background: #000;
 }
 
-/*End-Button*/
+/* End-Button */
 
 .end button {
     margin-top: 1.5rem;
@@ -361,14 +379,14 @@ body {
 .end button:hover {
     letter-spacing: 1.5px;
     background-color: #aaa;
-    transition: 0.3s all;
+    transition: .3s all;
 }
 
 .end button:not(hover) {
-    transition: 0.3s all;
+    transition: .3s all;
 }
 
-/*End-Logo*/
+/* End-Logo */
 
 .end img {
     width: 3rem;
@@ -383,14 +401,18 @@ body {
 
 .end a b {
     font-size: 1.2rem;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .end a:hover b {
     color: #ff5700;
 }
 
-/*End-Nav*/
+.end a:hover img {
+    content: url('Svg/BPNT-Alaranjado.svg');
+}
+
+/* End-Nav */
 
 .end-nav {
     display: flex;
@@ -411,7 +433,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-right: 1.5rem;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .navbar-end a:hover {
