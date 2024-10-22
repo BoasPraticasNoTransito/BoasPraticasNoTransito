@@ -401,7 +401,6 @@ body {
 
 .end a b {
     font-size: 1.2rem;
-    transition: .3s;
 }
 
 .end a:hover b {
