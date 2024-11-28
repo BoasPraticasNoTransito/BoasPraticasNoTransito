@@ -391,6 +391,7 @@ mark {
     color: #ffffff;
     line-height: 1.5rem;
     font-size: 1.2rem;
+    padding-right: 1rem;
     font-weight: 650;
 }
 
@@ -779,7 +780,6 @@ mark {
 
     .title p {
         font-size: 1.1rem;
-        padding-right: 1rem;
     }    
     
     /* Button-Link */
@@ -922,7 +922,6 @@ mark {
 
     .title p {
         font-size: 1.1rem;
-        padding-right: 1rem;
     }    
     
     /* Button-Link */
