@@ -459,7 +459,7 @@ mark {
     justify-content: center;
     align-items: center;
     padding: 7.05rem 1.25rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0 auto;
     opacity: 0;
@@ -625,12 +625,11 @@ mark {
     opacity: 1;
 }
 
-/* Media */
+/* Media for other devices or screens */
 
 /* For tablet screens */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
     /* Header */
     
     #header {
@@ -707,7 +706,7 @@ mark {
     }
     
     .content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
-        padding: 3rem;
+        padding: 2rem;
     }
     
     /* End of the page */
@@ -726,7 +725,6 @@ mark {
 /* For smartphone screens */
 
 @media (max-width: 768px) {
-
     /* Header */
     
     #header {
@@ -781,124 +779,7 @@ mark {
 
     .title p {
         font-size: 1.1rem;
-    }    
-    
-    /* Button-Link */
-    
-    .title button {
-        font-size: 1.6rem;
-    }
-
-    /* Contents */
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(1.25rem) scale(1.05);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-    }
-    
-    .content1, .content2, .content3, .content4, .content5 {
-        padding: 5.05rem 1rem;
-        font-size: 1.4rem;
-    }
-    
-    .content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
-        padding: 2rem;
-    }
-    
-    /* End of the page */
-    
-    .end {
-        font-size: 1.4rem;
-    }
-    
-    /* End-Button */
-    
-    .end button {
-        font-size: 1.6rem;
-    }
-
-    /* End-Logo */
-
-    .end img {
-        width: 2.8rem;
-    }
-
-    .end a b {
-        font-size: 1.1rem;
-    }
-
-    /* End-Nav */
-
-    .navbar-end a {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-}
-
-/* For smaller smartphone screens */
-
-@media (max-width: 480px) {
-
-    /* Header */
-    
-    #header {
-        padding: 0.8rem 9.375%;
-    }
-    
-    /* Logo */
-    
-    .logo img {
-        width: 2.3rem;
-    }
-    
-    .logo a b {
-        font-size: 1.2rem;
-    }
-    
-    /* Navbar */
-
-    .navbar a {
-        visibility: hidden;
-        font-size: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .navbar a::after {
-        visibility: hidden;
-    }
-    
-    /* Search, Search Icon and Icon2 */
-    
-    #search-bar {
-        width: 9.55rem;
-    }
-
-    /* Results Container */
-    
-    #results {
-        top: 5rem;
-    }
-    
-    /* Title */
-    
-    .title {
-        transform: translateY(25%);
-        margin-left: 2.5rem;
-    }
-    
-    .title h1 {
-        font-size: 3.2rem;
-    }
-
-    .title p {
-        font-size: 1.1rem;
+        padding-right: 1rem;
     }    
     
     /* Button-Link */
@@ -956,5 +837,154 @@ mark {
     .navbar-end a {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+    }
+}
+
+/* For smaller smartphone screens */
+
+@media (max-width: 480px) {
+    /* Header */
+    
+    #header {
+        padding: 0.8rem 9.375%;
+    }
+    
+    /* Logo */
+    
+    .logo img {
+        width: 2.3rem;
+    }
+    
+    .logo a b {
+        font-size: 1.2rem;
+    }
+    
+    /* Navbar */
+
+    .navbar a {
+        visibility: hidden;
+        font-size: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .navbar a::after {
+        visibility: hidden;
+    }
+    
+    /* Navbar */
+
+    .navbar a {
+        visibility: hidden;
+        font-size: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Search, Search Icon and Icon2 */
+
+    #search-bar {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    #search-bar input {
+        width: 0;
+        font-size: 0;
+        padding-left: 0;
+    }
+
+    #search-bar button {
+        width: 0;
+    }
+
+    #search-bar button i {
+        font-size: 0;
+    }
+
+    /* Results Container */
+    
+    #results {
+        top: 5rem;
+    }
+    
+    /* Title */
+    
+    .title {
+        transform: translateY(25%);
+        margin-left: 2.5rem;
+    }
+    
+    .title h1 {
+        font-size: 3.2rem;
+    }
+
+    .title p {
+        font-size: 1.1rem;
+        padding-right: 1rem;
+    }    
+    
+    /* Button-Link */
+    
+    .title button {
+        font-size: 1.6rem;
+    }
+
+    /* Contents */
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(1.25rem) scale(1.05);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    .content1, .content2, .content3, .content4, .content5 {
+        padding: 5.05rem 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
+        padding: 1rem;
+    }
+    
+    /* End of the page */
+    
+    .end {
+        font-size: 1.4rem;
+    }
+    
+    /* End-Button */
+    
+    .end button {
+        font-size: 1.5rem;
+    }
+
+    /* End-Logo */
+
+    .end img {
+        width: 3.8rem;
+    }
+
+    .end a b {
+        font-size: 1.5rem;
+    }
+
+    /* End-Nav */
+
+    .end-nav {
+        justify-content: center;
+    }
+
+    .navbar-end a {
+        visibility: hidden;
+        font-size: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
