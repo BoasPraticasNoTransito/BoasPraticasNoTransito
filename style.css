@@ -13,12 +13,6 @@
     font-family: "poppins", sans-serif;
 }
 
-/* Scrollbar */
-
-html::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-}
-
 /* Body */
 
 body {
@@ -46,7 +40,7 @@ body {
     padding: 1.1rem 9.375%;
     background: transparent;
     backdrop-filter: blur(1.5rem);
-    transition: background-color .3s ease;
+    transition: .3s ease;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -58,17 +52,19 @@ body {
 
 .logo img {
     width: 2.5rem;
+    transition: .3s ease;
 }
 
 .logo a {
     color: #fff;
     text-decoration: none;
     text-align: center;
+    transition: .3s ease;
 }
 
 .logo a b {
     font-size: 1.3rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .logo a:hover b {
@@ -80,6 +76,7 @@ body {
 
 .navbar {
     transform: translateY(25%);
+    transition: .3s ease;
 }
 
 .navbar a {
@@ -90,7 +87,7 @@ body {
     font-weight: 600;
     margin-left: 0.8rem;
     margin-right: 0.8rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .navbar a:hover {
@@ -110,7 +107,7 @@ body {
     border-radius: 0.24rem;
     transform: translateY(0.63rem);
     opacity: 0;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .navbar a:hover::after {
@@ -129,7 +126,7 @@ body {
     display: flex;
     align-items: center;
     transform: translateY(20%);
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #search-bar:valid {
@@ -144,12 +141,13 @@ body {
     outline: none;
     font-size: 0.81rem;
     padding-left: 0.5rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #search-bar input, #search-bar input::placeholder {
     color: #fff;
     font-weight: 600;
+    transition: .3s ease;
 }
 
 #search-bar button {
@@ -162,12 +160,13 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: .3s ease;
 }
 
 #search-bar button i {
     color: #fff;
     font-size: 1.1rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #search-bar button:hover i {
@@ -179,8 +178,8 @@ body {
     color: #fff;
     font-size: 1.9rem;
     cursor: pointer;
-    transition: .3s;
     transform: translateY(5%);
+    transition: .3s ease;
 }
 
 #icon2:hover {
@@ -191,6 +190,7 @@ body {
 .icons {
     display: flex;
     gap: 0.75rem;
+    transition: .3s ease;
 }
 
 /* Results Container */
@@ -225,7 +225,7 @@ body {
 #close-results {
     color: #000;
     font-size: 2.25rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #close-results:hover {
@@ -238,11 +238,13 @@ body {
 #results h3 {
     margin: 0 0 0.625rem;
     color: #ff4800;
+    transition: .3s ease;
 }
 
 #results p {
     margin: 0.31rem 0;
     line-height: 1.6;
+    transition: .3s ease;
 }
 
 mark {
@@ -250,11 +252,12 @@ mark {
     color: #fff;
     padding: 0 0.125rem;
     border-radius: 0.25rem;
+    transition: .3s ease;
 }
 
 #results h3 a {
     color: #000;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #results h3 a:hover {
@@ -289,7 +292,7 @@ mark {
     left: 1.25rem;
     cursor: pointer;
     font-size: 2.5rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #menu-close-icon:hover {
@@ -303,6 +306,7 @@ mark {
     margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
+    transition: .3s ease;
 }
 
 #menu-search-text {
@@ -312,6 +316,7 @@ mark {
     border: 0.065rem solid #000;
     border-radius: 0.25rem 0 0 0.25rem;
     outline: none;
+    transition: .3s ease;
 }
 
 #menu-search-btn {
@@ -322,7 +327,7 @@ mark {
     color: #fff;
     border-radius: 0 0.25rem 0.25rem 0;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #menu-search-btn:hover {
@@ -331,6 +336,7 @@ mark {
 
 #menu-search-icon {
     font-size: 1.07rem;
+    transition: .3s ease;
 }
 
 /* Menu Navbar */
@@ -340,6 +346,7 @@ mark {
     display: flex;
     flex-direction: column;
     margin-top: 0.95rem;
+    transition: .3s ease;
 }
 
 .menu-navbar a {
@@ -348,7 +355,7 @@ mark {
     font-size: 1.13rem;
     font-weight: 600;
     margin-bottom: 0.95rem;
-    transition: color .3s;
+    transition: .3s ease;
 }
 
 .menu-navbar a:hover {
@@ -361,12 +368,13 @@ mark {
     margin-top: auto;
     padding: 1.25rem;
     text-align: center;
+    transition: .3s ease;
 }
 
 .menu-footer i {
     font-size: 3rem;
     color: #000;
-    transition: color .3s;
+    transition: .3s ease;
 }
 
 .menu-footer i:hover {
@@ -379,12 +387,14 @@ mark {
     position: absolute;
     transform: translateY(45%);
     margin-left: 4rem;
+    transition: .3s ease;
 }
 
 .title h1 {
     color: #fff;
     font-size: 4.4rem;
     text-transform: uppercase;
+    transition: .3s ease;
 }
 
 .title p {
@@ -393,6 +403,7 @@ mark {
     font-size: 1.2rem;
     padding-right: 1rem;
     font-weight: 650;
+    transition: .3s ease;
 }
 
 /* Button-Link */
@@ -407,16 +418,12 @@ mark {
     padding: 0.5rem 2.35rem;
     cursor: pointer;
     border-radius: 1.5rem;
+    transition: .3s ease;
 }
 
 .title button:hover {
     letter-spacing: 0.1rem;
     background-color: #cc3a00;
-    transition: .3s all;
-}
-
-.title button:not(hover) {
-    transition: .3s all;
 }
 
 /* Background */
@@ -464,13 +471,13 @@ mark {
     font-weight: 600;
     margin: 0 auto;
     opacity: 0;
-    transition: opacity 1s ease-out;
+    transition: .3s ease;
 }
 
 .content1 a, .content2 a, .content3 a, .content4 a, .content5 a {
     color: #0086ff;
     text-decoration: none;
-    transition: all .3s;
+    transition: .3s ease;
 }
 
 .content1 a:hover, .content2 a:hover, .content3 a:hover, .content4 a:hover, .content5 a:hover {
@@ -480,6 +487,7 @@ mark {
 .content1 p, .content2 p, .content3 p, .content4 p, .content5 p {
     padding: 4rem;
     text-align: justify;
+    transition: .3s ease;
 }
 
 /* First Content */
@@ -526,6 +534,7 @@ mark {
     font-size: 1.5rem;
     text-align: center;
     background: #000;
+    transition: .3s ease;
 }
 
 /* End-Button */
@@ -540,27 +549,26 @@ mark {
     padding: 0.5rem 2.35rem;
     cursor: pointer;
     border-radius: 1.5rem;
+    transition: .3s ease;
 }
 
 .end button:hover {
     letter-spacing: 0.1rem;
+    color: #fff;
     background-color: #ff4800;
-    transition: .3s all;
-}
-
-.end button:not(hover) {
-    transition: .3s all;
 }
 
 /* End-Logo */
 
 .end img {
     width: 3rem;
+    transition: .3s ease;
 }
 
 .end a {
     text-decoration: none;
     color: #fff;
+    transition: .3s ease;
 }
 
 .end a b {
@@ -584,6 +592,7 @@ mark {
     margin-top: 7.5rem;
     margin-left: 3.75rem;
     margin-right: 3.75rem;
+    transition: .3s ease;
 }
 
 .navbar-end {
@@ -598,7 +607,7 @@ mark {
     font-weight: 600;
     margin-left: 0.8rem;
     margin-right: 0.8rem;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .navbar-end a:hover {
@@ -618,7 +627,7 @@ mark {
     border-radius: 0.24rem;
     transform: translateY(0.63rem);
     opacity: 0;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .navbar-end a:hover::after {
